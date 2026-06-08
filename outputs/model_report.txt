@@ -1,0 +1,23 @@
+
+EARTHQUAKE DAMAGE PREDICTION - MODEL REPORT
+============================================
+Dataset: 260601 buildings, 43 features
+Train/Test Split: 80/20 (stratified)
+
+Baseline (Decision Tree) Accuracy : ~65.6%
+Best Model (Random Forest) Accuracy: ~68.4%
+
+Target Distribution:
+  Grade 1 (Low Damage)   : 148259 (56.9%)
+  Grade 2 (Medium Damage): 87218 (33.5%)
+  Grade 3 (High Damage)  : 0 (0.0%)
+
+Features Used: 42
+  Numerical: 32
+  Categorical: 10
+  Engineered: age_group, area_group, height_per_floor
+
+Next Steps:
+  - Deploy with Streamlit app (streamlit_app/app.py)
+  - Try LightGBM / XGBoost for potentially higher accuracy
+  - Tune with larger n_iter in RandomizedSearchCV

@@ -1,0 +1,6 @@
+models/
+*.pkl
+*.joblib
+__pycache__/
+.ipynb_checkpoints/
+catboost_info/
